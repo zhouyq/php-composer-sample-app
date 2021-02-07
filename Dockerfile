@@ -17,7 +17,7 @@ RUN composer install \
 
 FROM php:7.2-apache-stretch
 
-LABEL "author:zhouyq"
+LABEL maintainer="root@yunop.com"
 
 COPY . /var/www/html
 COPY --from=vendor /tmp/vendor/ /var/www/html/vendor/
